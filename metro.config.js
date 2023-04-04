@@ -10,8 +10,9 @@ module.exports = {
     getTransformOptions: async () => ({
       transform: {
         experimentalImportSupport: false,
-        inlineRequires: true,
-      },
+        inlineRequires: true
+      }
     }),
-  },
-};
+    babelTransformerPath: require.resolve('@tingyunapp/react-native-tingyunapp/src/NBSTransformer.js')
+  }
+}
