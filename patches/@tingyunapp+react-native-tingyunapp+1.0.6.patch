@@ -1,0 +1,18 @@
+diff --git a/node_modules/@tingyunapp/react-native-tingyunapp/ios/RNReactNativeTingyunapp.m b/node_modules/@tingyunapp/react-native-tingyunapp/ios/RNReactNativeTingyunapp.m
+index 42f4bfd..b49269e 100644
+--- a/node_modules/@tingyunapp/react-native-tingyunapp/ios/RNReactNativeTingyunapp.m
++++ b/node_modules/@tingyunapp/react-native-tingyunapp/ios/RNReactNativeTingyunapp.m
+@@ -53,11 +53,11 @@ - (dispatch_queue_t)methodQueue
+ }
+ 
+ RCT_EXPORT_METHOD(customLanuchEnd:(BOOL)enable){
+-    [NBSAppAgent customLanuchEnd:enable];
++    [NBSAppAgent customLaunchEnd:enable];
+ }
+ 
+ RCT_EXPORT_METHOD(lanuchFinish:(NSString *)lanuchName){
+-    [NBSAppAgent lanuchFinish:lanuchName];
++    [NBSAppAgent launchFinish:lanuchName];
+ }
+ 
+ RCT_EXPORT_METHOD(trackEvent:(NSString *)eventID withEventTag:(NSString *)eventTag withEventProperties:(NSDictionary *)eventProperties){
