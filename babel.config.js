@@ -1,4 +1,5 @@
 const { resolve } = require('path')
+
 module.exports = {
   presets: ['module:metro-react-native-babel-preset'],
   plugins: [
@@ -16,7 +17,12 @@ module.exports = {
                 currentFile.includes('node_modules\\react-native\\')
               ) // windows path
             ) &&
-            !(currentFile.includes('resolver/react-native/') || currentFile.includes('resolver\\react-native\\'))
+            !(currentFile.includes('resolver/react-native/') || currentFile.includes('resolver\\react-native\\')) &&
+            // 排除修改听云包
+            !(
+              currentFile.includes('node_modules/@tingyunapp/react-native-tingyunapp') ||
+              currentFile.includes('node_modules\\@tingyunapp\\react-native-tingyunapp')
+            )
           ) {
             return resolve(__dirname, 'resolver/react-native')
           }

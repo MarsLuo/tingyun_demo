@@ -1,6 +1,6 @@
 apply plugin: "com.android.application"
 apply plugin: "com.facebook.react"
-
+apply plugin: "newlens"
 import com.android.build.OutputFile
 
 /**
@@ -165,6 +165,9 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation("com.networkbench:tingyun-ea-agent-android:2.15.1")
+    implementation("com.networkbench.newlens.agent.android2:nbs.newlens.nativecrash:2.0.0")
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)

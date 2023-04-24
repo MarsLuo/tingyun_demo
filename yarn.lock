@@ -1878,10 +1878,10 @@
   dependencies:
     "@sinonjs/commons" "^2.0.0"
 
-"@tingyunapp/react-native-tingyunapp@1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@tingyunapp/react-native-tingyunapp/-/react-native-tingyunapp-1.0.6.tgz#f444a5de9423c68b7e171b886476e8a425748f65"
-  integrity sha512-z/Zr2VQhrXShSUKXC4swx2jS78kqD1OjPA+hSMom6l07CEyMNNR/rcGn/6dwgseH3Zo7zzjXAW1Gd469VLtbiA==
+"@tingyunapp/react-native-tingyunapp@1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@tingyunapp/react-native-tingyunapp/-/react-native-tingyunapp-1.0.7.tgz#e9e53ee8981e6f7776cb6fdca2c278b5cf8e0b2b"
+  integrity sha512-csHCOKs3cJGvEBz3a3Oz52W6hkQBNhrU71WzJTnLypuJZ2QlJumwWCGoQpymMgsdWZvKaJRutAQucZd5r0kyiA==
   dependencies:
     "@babel/runtime" "^7.6.2"
     if-env "1.0.4"
